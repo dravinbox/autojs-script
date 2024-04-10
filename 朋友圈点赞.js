@@ -15,9 +15,14 @@ function tryFav(btn) {
     sleep(200)
 }
 console.show()
+console.log("start")
 while (true) {
-  className("ImageView").desc("评论").untilFind();
-  var c = className("ImageView").desc("评论").find();
+  id("nh").untilFind();
+  var c = id("nh").find();
+  // console.log(nh)
+
+  // className("ImageView").desc("评论").untilFind();
+  // var c = className("ImageView").desc("评论").find();
   var n = c.length
   console.log(n)
   var i = 0
